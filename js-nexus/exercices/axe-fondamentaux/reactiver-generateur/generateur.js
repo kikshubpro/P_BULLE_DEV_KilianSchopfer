@@ -8,7 +8,7 @@
  * @returns
  */
 export function missingEnergy(maxEnergy, currentEnergy) {
-  return maxEnergy - currentEnergy;
+  return Number(maxEnergy - currentEnergy);
 }
 
 /**
@@ -19,7 +19,7 @@ export function missingEnergy(maxEnergy, currentEnergy) {
  * @returns
  */
 export function energyPercentage(maxEnergy, currentEnergy) {
-  return (currentEnergy / maxEnergy) * 100;
+  return Number((currentEnergy / maxEnergy) * 100);
 }
 
 /**
@@ -30,7 +30,7 @@ export function energyPercentage(maxEnergy, currentEnergy) {
  * @returns
  */
 export function energyAfterRecharge(currentEnergy, recharge) {
-  return currentEnergy + recharge;
+  return Number(currentEnergy + recharge);
 }
 
 /**
@@ -40,7 +40,7 @@ export function energyAfterRecharge(currentEnergy, recharge) {
  * @returns
  */
 export function isGeneratorReady(currentEnergy) {
-  return currentEnergy >= 500 ? true : false;
+  return Boolean(currentEnergy >= 500 ? true : false);
 }
 
 /**
@@ -51,5 +51,5 @@ export function isGeneratorReady(currentEnergy) {
  * @returns
  */
 export function generatorStatus(name, currentEnergy) {
-  return name + " possède " + currentEnergy + " unités d'énergie.";
+  return String(name + " possède " + currentEnergy + " unités d'énergie.");
 }

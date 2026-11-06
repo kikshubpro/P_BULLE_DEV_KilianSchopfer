@@ -11,7 +11,7 @@ export function sumRounds(numberOfRounds) {
   for (let i = 0; i < numberOfRounds; i++) {
     sum += i + 1;
   }
-  return sum;
+  return Number(sum);
 }
 
 /**
@@ -25,7 +25,7 @@ export function countSymbols(code) {
   for (const element of code) {
     count++;
   }
-  return count;
+  return Number(count);
 }
 
 /**
@@ -41,7 +41,7 @@ export function countX(code) {
       count++;
     }
   }
-  return count;
+  return Number(count);
 }
 
 /**
@@ -57,7 +57,7 @@ export function turnsBeforeEmpty(energy, consumption) {
     energy -= consumption;
     count++;
   }
-  return count;
+  return Number(count);
 }
 
 /**
@@ -73,5 +73,5 @@ export function firstRoundAbove(limit) {
     sum += sum;
     roundNumber++;
   }
-  return roundNumber;
+  return Number(roundNumber);
 }
