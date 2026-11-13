@@ -47,6 +47,6 @@ export function doubleLater(value, delay, callback) {
  */
 export function delayedStatus(name, delay, callback) {
   setTimeout(() => {
-    callback(name + " prêt");
+    callback(`${name} prêt`);
   }, delay);
 }

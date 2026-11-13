@@ -48,7 +48,5 @@ export function isStormAlert(speedKmh) {
  * @returns {string}
  */
 export function windReport(station, speedKmh) {
-  return (
-    station + " : vent de " + speedKmh + " km/h (" + speedKmh / 3.6 + " m/s)."
-  );
+  return `${station} : vent de ${speedKmh} km/h (${speedKmh / 3.6} m/s).`;
 }
