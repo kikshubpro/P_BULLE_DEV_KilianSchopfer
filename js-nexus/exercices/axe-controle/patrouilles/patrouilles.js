@@ -3,36 +3,36 @@
 /**
  * Additionne les numéros de ronde de 1 au nombre indiqué.
  *
- * @param {*} numberOfRounds
- * @returns
+ * @param {number} numberOfRounds
+ * @returns {number}
  */
 export function sumRounds(numberOfRounds) {
   let sum = 0;
   for (let i = 0; i < numberOfRounds; i++) {
     sum += i + 1;
   }
-  return Number(sum);
+  return sum;
 }
 
 /**
  * Compte le nombre de caractères d'un code.
  *
- * @param {*} code
- * @returns
+ * @param {string} code
+ * @returns {number}
  */
 export function countSymbols(code) {
   let count = 0;
   for (const element of code) {
     count++;
   }
-  return Number(count);
+  return count;
 }
 
 /**
  * Compte le nombre de caractères `X` dans un code.
  *
- * @param {*} code
- * @returns
+ * @param {string} code
+ * @returns {number}
  */
 export function countX(code) {
   let count = 0;
@@ -41,15 +41,15 @@ export function countX(code) {
       count++;
     }
   }
-  return Number(count);
+  return count;
 }
 
 /**
  * Calcule le nombre de tours complets possibles avant épuisement de l'énergie.
  *
- * @param {*} energy
- * @param {*} consumption
- * @returns
+ * @param {number} energy
+ * @param {number} consumption
+ * @returns {number}
  */
 export function turnsBeforeEmpty(energy, consumption) {
   let count = 0;
@@ -57,14 +57,14 @@ export function turnsBeforeEmpty(energy, consumption) {
     energy -= consumption;
     count++;
   }
-  return Number(count);
+  return count;
 }
 
 /**
  * Retourne la première ronde pour laquelle le total dépasse une limite.
  *
- * @param {*} limit
- * @returns
+ * @param {number} limit
+ * @returns {number}
  */
 export function firstRoundAbove(limit) {
   let sum = 1;
@@ -73,5 +73,5 @@ export function firstRoundAbove(limit) {
     sum += sum;
     roundNumber++;
   }
-  return Number(roundNumber);
+  return roundNumber;
 }

@@ -15,9 +15,9 @@ export function runLater(callback, delay) {
 /**
  * Transmet un message à un callback après un délai.
  *
- * @param {*} message
- * @param {*} delay
- * @param {*} callback
+ * @param {string} message
+ * @param {number} delay
+ * @param {function} callback
  */
 export function sendSignal(message, delay, callback) {
   setTimeout(() => {
@@ -28,9 +28,9 @@ export function sendSignal(message, delay, callback) {
 /**
  * Double une valeur puis la transmet à un callback après un délai.
  *
- * @param {*} value
- * @param {*} delay
- * @param {*} callback
+ * @param {number} value
+ * @param {number} delay
+ * @param {function} callback
  */
 export function doubleLater(value, delay, callback) {
   setTimeout(() => {
@@ -41,9 +41,9 @@ export function doubleLater(value, delay, callback) {
 /**
  * Construit un statut puis le transmet après un délai.
  *
- * @param {*} name
- * @param {*} delay
- * @param {*} callback
+ * @param {string} name
+ * @param {number} delay
+ * @param {function} callback
  */
 export function delayedStatus(name, delay, callback) {
   setTimeout(() => {
