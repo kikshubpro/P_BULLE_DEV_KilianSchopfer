@@ -2,44 +2,60 @@
 
 /**
  * Retourne le type JavaScript de la donnée.
+ * @param {*} value
+ * @returns {string}
  */
 export function dataType(value) {
-  // TODO
+  return typeof value;
 }
 
 /**
  * Indique si le comptage vaut undefined.
+ * @param {*} count
+ * @returns {boolean}
  */
 export function isNotTransmitted(count) {
-  // TODO
+  return count === undefined;
 }
 
 /**
  * Indique si le comptage vaut null.
+ * @param {*} count
+ * @returns {boolean}
  */
 export function isOffline(count) {
-  // TODO
+  return count === null;
 }
 
 /**
  * Indique si un comptage est disponible, c'est-à-dire
  * différent de undefined et de null.
+ * @param {*} count
+ * @returns {boolean}
  */
 export function hasBirdCount(count) {
-  // TODO
+  return count !== null && count !== undefined;
 }
 
 /**
  * Additionne les deux comptages.
  * Un comptage indisponible compte pour 0.
+ * @param {*} northCount
+ * @param {*} southCount
+ * @returns {number}
  */
 export function totalBirds(northCount, southCount) {
-  // TODO
+  return (
+    (northCount == undefined ? 0 : northCount) +
+    (southCount == undefined ? 0 : southCount)
+  );
 }
 
 /**
  * Indique si la hauteur est de type number et n'est pas NaN.
+ * @param {*} height
+ * @returns {boolean}
  */
 export function isValidWaveHeight(height) {
-  // TODO
+  return !isNaN(height) && typeof height == "number";
 }
