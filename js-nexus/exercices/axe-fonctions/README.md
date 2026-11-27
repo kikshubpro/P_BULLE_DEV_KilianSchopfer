@@ -7,5 +7,10 @@
 | 1 | Activer le catalyseur | déclaration de fonctions, paramètres, paramètres par défaut, `return`, portée locale |
 | 2 | Stabiliser les fragments d’énergie | paramètres rest `...`, réutilisation de fonctions, portée, transmission de plusieurs valeurs |
 | 3 | Assembler les modules de la Forge | `export`, `import`, séparation en plusieurs fichiers, réutilisation entre modules |
+| 4 | Remplir le creuset | fonctions qui retournent un objet, objets littéraux, réutilisation de `sumFragments` et `averageFragments` |
+| 5 | Gérer les réservoirs | fonctions qui modifient un objet reçu, valeur de retour vs effet, `throw`, réutilisation de `calculateOutput` |
+| 6 | Accomplir le grand œuvre | clés dynamiques, `for...in`, modifier vs copier un objet, réutilisation de `stabilizeEnergy` et `formatResult` |
 
 Les exercices restent courts et centrés sur la création, la réutilisation et l’organisation des fonctions.
+
+Les missions 4 à 6 sont plus exigeantes : elles importent des fonctions écrites dans les missions précédentes, qui doivent donc être terminées.
