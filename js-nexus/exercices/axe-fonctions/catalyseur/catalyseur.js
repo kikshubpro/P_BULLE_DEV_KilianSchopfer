@@ -41,6 +41,9 @@ export function forgeMessage(element, prefix = "Forge") {
 
 /**
  * Calcule l'énergie restante après une perte.
+ * @param {number} energy
+ * @param {number} loss
+ * @returns {number}
  */
 export function calculateOutput(energy, loss) {
   return energy - loss;
@@ -48,6 +51,10 @@ export function calculateOutput(energy, loss) {
 
 /**
  * Calcule puis amplifie l'énergie restante.
+ * @param {number} energy
+ * @param {number} loss
+ * @param {number} factor
+ * @returns {number}
  */
 export function boostedOutput(energy, loss, factor = 2) {
   return stabilizeEnergy(calculateOutput(energy, loss), factor);
